@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- title -->
+    <title>Membership | Ellysian Estate</title>
+    <link rel="icon" href="Assets/Brand_ElysianLogoIcon.png" type="image/x-icon">
+</head>
+
+<body id="body">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <!-- mega drop down menu -->
+        <div class="container-nav" style="margin-left: 20px;">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item pl-2 pl-sm-0 dropdown dropdown-hover position-static">
+                    <a id="menuButton" class="nav-link" data-toggle="dropdown" href="/column" style="color: white;"
+                        onclick="colorChange()"><span class="pl-3 pl-sm-0">Menu</span></a>
+                    <div class="dropdown-menu dropdown-menu-full" role="menu">
+                        <!-- Content mega menu -->
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="card" style="width: 500px;">
+                                        <img src="Assets/adrien-vajas-S5mzqeIOBB0-unsplash.jpg" class="card-img-top"
+                                            alt="Service's Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Services</h5>
+                                            <p class="card-text">Luxury and personalized assistance with Elysian Estate.
+                                                From wines to curated experiences, indulge in our exceptional concierge
+                                                solutions.</p><a href="service.html" style="color:#032328;"><span
+                                                    class="pl-3 pl-sm-0">Get to know</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card" style="width: 500px;">
+                                        <img src="Assets/marcel-gross-marcelgross-ch-sHTwDYKti6Q-unsplash.jpg"
+                                            class="card-img-top" alt="Events">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Membership</h5>
+                                            <p class="card-text">Join our exclusive membership programme and unfold new
+                                                definition of luxury. We are taking luxurious experience for you,
+                                                whenever and wherever you are.</p>
+                                            <a href="membership.html" style="color:#032328;"><span
+                                                    class="pl-3 pl-sm-0">Join
+                                                    Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card" style="width: 500px;">
+                                        <img src="Assets/corina-rainer-sScNrKruEPs-unsplash.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special Request</h5>
+                                            <p class="card-text">Elysian Estates offers global concierge services
+                                                catering to luxury lifestyle needs, mainly focusing on wine & spirits,
+                                                events, dining, and more.</p>
+                                            <a href="specialrequest.html" style="color:#032328;"><span
+                                                    class="pl-3 pl-sm-0">Discover</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of content -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end of mega drop down menu -->
+        <!-- logo -->
+        <div class="navbar-brand ml-auto mr-auto">
+            <a href="index.html"><img src="Assets/Brand.png" alt="logo" height="120" id="logoNav"></a>
+        </div>
+        <!-- end of logo -->
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow:unset;">
+            <button id="joinButton" type="button" class="btn btn-link ml-auto"
+                style="text-decoration:none; color: white;">Join</button>
+        </div>
+        <!-- menu -->
+    </nav>
+    <!-- end of Navbar -->
+
+    <!-- banner -->
+    <div class="hero-imageMember">
+        <div class="hero-text">
+            <h1>Join the family</h1>
+            <p>Unlock unparalleled luxury and exclusive privileges with our prestigious membership. Elevate your
+                lifestyle with personalized services, VIP access, and unforgettable experiences. Embrace a world of
+                opulence and join our elite community today.</p>
+        </div>
+    </div>
+    <!-- end of banner -->
+
+    <!-- Benefit Section -->
+    <div class="sectionTitle">
+        <h1>Benefits</h1>
+    </div>
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Assets/klara-kulikova-irgHDEtIZaQ-unsplash.jpg" class="img-fluid card-img" alt="Wine">
+                    <div class="card-body">
+                        <h5 class="card-title">Wine</h5>
+                        <p class="card-text">Personalized Travel Planning<br>
+                            Fine Dining Reservations<br>
+                            Event Tickets<br>
+                            Luxury Shopping Assistance<br>
+                            24/7 Concierge Support
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        <p> start from </p>
+                        <h5>$500/month</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Assets/marvin-l-61sZcZl3Mlk-unsplash.jpg" class="img-fluid card-img" alt="Cognag">
+                    <div class="card-body">
+                        <h5 class="card-title">Cognag</h5>
+                        <p class="card-text">All of Wine benefits +<br>
+                            Spa and Wellness Services<br>
+                            VIP Airport Services<br>
+                            Personal Styling and Fashion Consultation<br>
+                            Luxury Car Rental<br>
+                            Cultural Experiences
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p> start from </p>
+                        <h5>$1000/month</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Assets/ulvi-safari-uyQ9lQcdI-Q-unsplash.jpg" class="img-fluid card-img" alt="Rum">
+                    <div class="card-body">
+                        <h5 class="card-title">Rum</h5>
+                        <p class="card-text">All of Rum benefits +<br>
+                            Private Yacht Charters<br>
+                            Private Jet Charter<br>
+                            Exclusive Golf Memberships<br>
+                            Fine Wine Cellar Curation<br>
+                            Luxury Real Estate Services<br>
+                            Private Access to Members-Only Clubs<br>
+                            Personalized Fine Art Consultation<br>
+                            Exclusive Travel Experiences<br>
+                            Personal Security and Protection<br>
+                            Private Event Planning</p>
+                        <br>
+                        <p> start from </p>
+                        <h5>$1500/month</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 50px; display:flex; justify-content:center;">
+        <button type="button" class="btn btn-outline" style="margin-right: 20px;">Register</button>
+        <a href="membershipbusiness.html" class="btn btn-outline">Business</a>
+    </div>
+    <!-- end of Benefit Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid footerContainer">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html"><img src="Assets/Brand.png" alt="logo" height="120"></a>
+                </div>
+                <div class="col">
+                    <h6>Newsletter</h6>
+                    <p class="pFooter">Subscribe to our newsletter and stay in touch with Elysian Estate</p>
+                    <a href="#" style="color: #C8876B;"><span class="pl-3 pl-sm-0">Subscribe</span></a>
+                </div>
+                <div class="col">
+                    <h6>Contact Us</h6>
+                    <p class="pFooter">123 Street, Roma, Italy</p>
+                    <p class="pFooter">Email: info@elysianestate.com</p>
+                    <p class="pFooter">Phone: +1234567890</p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <p class="pFooter">&#169; 2023 2023 Elysian Estate. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 col-md-6" style="text-align: right;">
+                    <p class="pFooter">Created by: Bernadette Febriani Sutanto</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of Footer -->
+    <script src="script.js"></script>
+</body>
+
+</html>
